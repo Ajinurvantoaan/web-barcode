@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pendaftaran Beauty Clinic</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1><i class="fas fa-user-clock"></i> Pendaftaran Kusuma Beauty Clinic</h1>
+      <form id="queueForm">
+        <div class="input-group">
+          <label for="name"><i class="fas fa-user"></i> Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="input-group">
+          <label for="service"><i class="fas fa-concierge-bell"></i> Pilih Layanan</label>
+          <select id="service" required>
+            <option value="" disabled selected>Pilih layanan</option>
+            <option value="Umum">Layanan Umum</option>
+            <option value="Kesehatan">Layanan Kesehatan</option>
+            <option value="Administrasi">Layanan Administrasi</option>
+            <option value="kecantikan">Layanan Kecantikan</option>
+            <option value="treatment">Layanan Treatment</option>
+            <option value="consuletasi">Layanan Konsultasi</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Daftar Sekarang</button>
+      </form>
+
+      <div id="ticket" class="ticket hidden">
+        <h2>🎟️ Nomor Antrian Anda</h2>
+        <div class="ticket-box">
+          <span id="ticketNumber">A-001</span>
+        </div>
+        <p id="ticketInfo"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
